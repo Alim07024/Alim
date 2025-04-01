@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аккордеон, Попап, Вкладки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-header">Заголовок 1</button>
+            <div class="accordion-content">Содержимое 1</div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header">Заголовок 2</button>
+            <div class="accordion-content">Содержимое 2</div>
+        </div>
+    </section>
+
+    <section class="tabs">
+        <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="tab1">Вкладка 1</button>
+            <button class="tab-btn" data-tab="tab2">Вкладка 2</button>
+        </div>
+        <div class="tab-content active" id="tab1">Контент Вкладки 1</div>
+        <div class="tab-content" id="tab2">Контент Вкладки 2</div>
+    </section>
+    
+    <button id="open-popup">Открыть Попап</button>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <p>Текст в попапе</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
